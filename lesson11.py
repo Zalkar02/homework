@@ -38,12 +38,14 @@ class BankAccount:
 		print('Счёт паполнен')
 		print(f'{self.name} {self.surname}')
 		print(f'Баланс: {self.balance}')
+		print('______________________________')
 
-	def _withdraw(self, num):
+	def withdraw(self, num):
 		self.balance -= num
 		print('Транзакция выполнена')
 		print(f'{self.name} {self.surname}')
 		print(f'Баланс: {self.balance}')
+		print('______________________________')
 
 
 class MinimumBalanceAccount(BankAccount):
@@ -54,11 +56,12 @@ class MinimumBalanceAccount(BankAccount):
 	
 	def withdraw(self, num):
 		if self.balance-num > self.minimum_balance:
-			self._withdraw(num)
+			BankAccount.withdraw(self, num)
 		else:
 			print('Не хватает средств')
 			print(f'{self.name} {self.surname}')
 			print(f'Баланс: {self.balance}')
+			print('______________________________')
 
 
 per = MinimumBalanceAccount('Zalkar', 'Azis uulu')
