@@ -18,7 +18,7 @@ class Calculator:
 
 
 cl = Calculator(50)
-print(cl.__add__(20*5))
+print(cl.add(20*5))
 print(cl.__sub__(100//4))
 print(cl.__mul__(5+5))
 print(cl.__div__(18-15))
