@@ -1,5 +1,3 @@
-# Задача №1
-
 class Todo:
 	todo_items = []
 
@@ -48,8 +46,3 @@ t2.uncheck()
 todo.find('брат')
 t3.uncheck()
 todo.find('чку')
-
-
-# Задача №2
-
-
